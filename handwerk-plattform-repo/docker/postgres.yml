@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  hw-project-test:
+    container_name: hw-project-test
+    image: postgres:14-alpine
+    ports:
+      - '5433:5432'
+    volumes:
+      - ./db-data:/home/db-data
+    environment:
+      - POSTGRES_PASSWORD=localS3cret
+      - POSTGRES_USER=hw_user
+      - POSTGRES_DB=handwerk_test

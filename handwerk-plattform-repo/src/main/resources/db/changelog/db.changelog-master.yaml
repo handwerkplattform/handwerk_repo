@@ -1,0 +1,6 @@
+databaseChangeLog:
+#  - includeAll:
+#      path: db/changelog/changeset/
+  - include:
+      file: db/changelog/changeset/liquibase-init_all_hw_tables.postgresql.sql
+
